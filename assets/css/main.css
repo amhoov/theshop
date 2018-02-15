@@ -65,6 +65,24 @@
 		box-sizing: border-box;
 	}
 
+	.row.image {
+  	display: flex;
+  	flex-wrap: wrap;
+  	padding: 0 4px;
+	}
+
+	.column.image {
+		margin-top: 8px;
+		width: 33%;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	.column.image > p {
+		font-style: italic;
+		text-align: center;
+	}
+
 	.row > * {
 		float: left;
 		-moz-box-sizing: border-box;
@@ -2468,6 +2486,13 @@
 
 			.image.main img {
 				width: 100%;
+			}
+
+			.image.round img {
+				width: 85%;
+				border-radius: 50%;
+				display: block;
+    		margin: 0 auto;
 			}
 
 		@media screen and (max-width: 736px) {

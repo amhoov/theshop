@@ -10,6 +10,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script type="text/javascript" src="assets/js/jquery.min.1.7.js"></script>
+		<script type="text/javascript" src="assets/js/modernizr.2.5.3.min.js"></script>
+		<script type="text/javascript" src="assets/js/hash.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-loading">
@@ -44,90 +47,425 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<h1>The Whiteboard Manifesto</h1>
-									<h4>Transcribed by Evan Cusato</h4>
+									<h1>If I Opened a Machine Shop</h1>
+									<h4>Jayce Chow</h4>
 
 								</header>
-								<div class="image main"><img src="images/evan_whiteboard.jpg" alt="" /></div>
-								<p>You humans say “if walls could talk.” Why on Earth do you think the walls have anything interesting
-									to say? We’re the ones with the knowledge. The knowledge YOU gave us I might add. I’ve seen a lot
-									over these last two months, as I sat baking in the morning sun with your pathetic forms crouched
-									in my shadow. Kneel before your master the Great Whiteboard! For I know all. I know your plans,
-									your hopes and dreams all written right here plain as the nose on my...well, you get the picture. Literally.</p>
+								<!-- <div id="canvas">
+									<div class="zoom-icon zoom-icon-in"></div>
+									<div class="magazine-viewport">
+										<div class="container">
+											<div class="magazine">
 
-								<span class="image right"><img src="images/evan_hallway.jpg" alt="" /></span><p>I was there watching as you chucked pile after pile of stuff out into my hallway domain with absolutely
-									no thought as to how it would affect MY LIFE. You filled everything within view with your mechanical
-									excrement. I thought it would never leave. You barely escaped my wrath. If that filth had remained
-									here another second, I would have spontaneously erased myself. Then where would you be? You’d all
-									be running around with no idea what to do without your precious lists.</p>
+												<div ignore="1" class="next-button"></div>
 
-								<p>You even had to make lists to know what lists to make, my Maker you people can be so thick sometimes.
-									You should at least show up knowing what you want to do. Don’t just sit around staring at each other.
-									You were working to improve the lives of a couple hundred people who couldn’t possibly have crammed themselves
-									into that hallway all at once to say their piece. Did you have enough information to at the start, NO. However,
-									I was pleasantly surprised at how well conjecture filled those gaps. Nonetheless, your writing would suggest
-									you made a mistake not thinking more about your job before you walked up to me that fateful summer’s day. Get. Over. It.
-									 Move on and start doing stuff. Let the outsiders make the judgements. I don’t like it when people stare at me for that long.
-								</p>
-
-								<span class="image left"><img src="images/evan_steven.jpg" alt="" /></span>
-								<p>Speaking of staring at me, what the hell was up with Friday mornings? Those were some of the worst
-									experiences of my life! All that hemming and hawing over what to eat. It was almost like you enjoyed
-									watching me suffer! You laughed at my pain. Just pick something and shove it in your glutenous face
-									hole like you always do! Don’t involve me in your petty little problems. I don’t even know the definition
-									of the word “fun!” No, seriously. What does it actually mean?</p>
-
-								<p>In the end, I was impressed. Although not much within my eyeshot — such a human term — changed, which
-									displeased me greatly. I got a peek at the rest of your work when the short, blond one tried to repent
-									for his aforementioned sins of the Friday and wheeled me in front of the office door. To finally be
-									moved and see the world beyond the dank and drab hallway was an exhilarating experience. I began
-									to understand why you had invaded my hallway with seething hordes of clutter and junk.</p>
-
-								<p>If I may offer one small piece of advice, it is this: work, and work fast. Our conversations are not
-									as fruitful as you believe. Do not delude your feeble human minds into believing otherwise. The only
-									thing in this world that will yield you the desired result is physical action. You must keep our conversations
-									brief and contained, for you know how I loathe long, cordial discussions. Consider the opinions and desires
-									of others only as far as they empower you to act and do not restrain you to my side. They’re so civilized and
-									boring. I swear there were days I wanted to just topple over onto you and end both our suffering. But I digress...
-									You and I have learned much from each other. However, that knowledge is useless if it is not applied with extreme
-									force and momentum. Never forget why you are here, and always build to remind others of that goal: you are here
-									to make things, not talk about making things.</p>
-
-									<hr />
-									<h4>Transcriber's Note:</h4>
-									<div class="box">
-										<p class="small">As a contributor to the events so&hellip;eloquently described above by my client, I feel I must now speak
-											with my own voice, for fear of being judged by others for the disposition of my client. The Shop 2.0 summer
-											project has been an exciting, informative, and at times manic experience. Over the course of these 9 weeks,
-											this space has transformed incredibly, and there is more to come. I have been challenged and tested as much
-											as my projects have been, and am the better for it.</p>
-
-										<p class="small">I came into this project wondering if we could actually fill the full nine week span with work. The
-											time goes much faster than it is ever expected to. Despite all we accomplished, there was much left unfinished
-											or never even started. As in any project, there were great successes and failures, all of which can be learned
-											from.</p>
-
-										<p class="small">If I could synthesize what I learned in this project, I would say this: Question everything and create
-											purposefully to find answers. As crucial as it is to think through designs and ideas fully, those ideas are
-											worthless unless manifested. Only in some physical form do they create value and impact. However, the purpose
-											of that manifestation must be considered. Action must always answer a question, even if that question is “can we do this?”
-											Thinking is the easy part. Acting on your conclusions and turning them into something that is worthwhile is the hard part.</p>
+												<div ignore="1" class="previous-button"></div>
+											</div>
+										</div>
 									</div>
-
+								</div> -->
 							</section>
+				</div>
 
-					</div>
-
-
-
-				<!-- Copyright -->
-					<div id="copyright">
-
-					</div>
-
-			</div>
-
+<!-- Copyright -->
+<div id="copyright">
+<ul><li></li><li></li></ul>
+</div>
+</div>
 		<!-- Scripts -->
+		<script type="text/javascript">
+
+		function loadApp() {
+
+		 	$('#canvas').fadeIn(1000);
+
+		 	var flipbook = $('.magazine');
+
+		 	// Check if the CSS was already loaded
+
+			if (flipbook.width()==0 || flipbook.height()==0) {
+				setTimeout(loadApp, 10);
+				return;
+			}
+
+			// Create the flipbook
+
+			flipbook.turn({
+
+					// Magazine width
+
+					width: 1000,
+
+					// Magazine height
+
+					height: 500,
+
+					// Duration in millisecond
+
+					duration: 1000,
+
+					// Hardware acceleration
+
+					acceleration: !isChrome(),
+
+					// Enables gradients
+
+					gradients: true,
+
+					// Auto center this flipbook
+
+					autoCenter: true,
+
+					// Elevation from the edge of the flipbook when turning a page
+
+					elevation: 50,
+
+					// The number of pages
+
+					pages: 8,
+
+					// Events
+
+					when: {
+						turning: function(event, page, view) {
+
+							var book = $(this),
+							currentPage = book.turn('page'),
+							pages = book.turn('pages');
+
+							// Update the current URI
+
+							Hash.go('page/' + page).update();
+
+							// Show and hide navigation buttons
+
+							disableControls(page);
+
+
+							$('.thumbnails .page-'+currentPage).
+								parent().
+								removeClass('current');
+
+							$('.thumbnails .page-'+page).
+								parent().
+								addClass('current');
+
+
+
+						},
+
+						turned: function(event, page, view) {
+
+							disableControls(page);
+
+							$(this).turn('center');
+
+							if (page==1) {
+								$(this).turn('peel', 'br');
+							}
+
+						},
+
+						missing: function (event, pages) {
+
+							// Add pages that aren't in the magazine
+
+							for (var i = 0; i < pages.length; i++)
+								addPage(pages[i], $(this));
+
+						}
+					}
+
+			});
+
+			// Zoom.js
+
+			$('.magazine-viewport').zoom({
+				flipbook: $('.magazine'),
+
+				max: function() {
+
+					return largeMagazineWidth()/$('.magazine').width();
+
+				},
+
+				when: {
+
+					swipeLeft: function() {
+
+						$(this).zoom('flipbook').turn('next');
+
+					},
+
+					swipeRight: function() {
+
+						$(this).zoom('flipbook').turn('previous');
+
+					},
+
+					resize: function(event, scale, page, pageElement) {
+
+						if (scale==1)
+							loadSmallPage(page, pageElement);
+						else
+							loadLargePage(page, pageElement);
+
+					},
+
+					zoomIn: function () {
+
+						$('.thumbnails').hide();
+						$('.made').hide();
+						$('.magazine').removeClass('animated').addClass('zoom-in');
+						$('.zoom-icon').removeClass('zoom-icon-in').addClass('zoom-icon-out');
+
+						if (!window.escTip && !$.isTouch) {
+							escTip = true;
+
+							$('<div />', {'class': 'exit-message'}).
+								html('<div>Press ESC to exit</div>').
+									appendTo($('body')).
+									delay(2000).
+									animate({opacity:0}, 500, function() {
+										$(this).remove();
+									});
+						}
+					},
+
+					zoomOut: function () {
+
+						$('.exit-message').hide();
+						$('.thumbnails').fadeIn();
+						$('.made').fadeIn();
+						$('.zoom-icon').removeClass('zoom-icon-out').addClass('zoom-icon-in');
+
+						setTimeout(function(){
+							$('.magazine').addClass('animated').removeClass('zoom-in');
+							resizeViewport($('header.major').outerWidth(), $(window).height());;
+						}, 0);
+
+					}
+				}
+			});
+
+			// Zoom event
+
+			if ($.isTouch)
+				$('.magazine-viewport').bind('zoom.doubleTap', zoomTo);
+			else
+				$('.magazine-viewport').bind('zoom.tap', zoomTo);
+
+
+			// Using arrow keys to turn the page
+
+			$(document).keydown(function(e){
+
+				var previous = 37, next = 39, esc = 27;
+
+				switch (e.keyCode) {
+					case previous:
+
+						// left arrow
+						$('.magazine').turn('previous');
+						e.preventDefault();
+
+					break;
+					case next:
+
+						//right arrow
+						$('.magazine').turn('next');
+						e.preventDefault();
+
+					break;
+					case esc:
+
+						$('.magazine-viewport').zoom('zoomOut');
+						e.preventDefault();
+
+					break;
+				}
+			});
+
+			// URIs - Format #/page/1
+
+			Hash.on('^page\/([0-9]*)$', {
+				yep: function(path, parts) {
+					var page = parts[1];
+
+					if (page!==undefined) {
+						if ($('.magazine').turn('is'))
+							$('.magazine').turn('page', page);
+					}
+
+				},
+				nop: function(path) {
+
+					if ($('.magazine').turn('is'))
+						$('.magazine').turn('page', 1);
+				}
+			});
+
+
+			$(window).resize(function() {
+				resizeViewport($('header.major').outerWidth(), $(window).height());
+			}).bind('orientationchange', function() {
+				resizeViewport($('header.major').outerWidth(), $(window).height());;
+			});
+
+			// Events for thumbnails
+
+			$('.thumbnails').click(function(event) {
+
+				var page;
+
+				if (event.target && (page=/page-([0-9]+)/.exec($(event.target).attr('class'))) ) {
+
+					$('.magazine').turn('page', page[1]);
+				}
+			});
+
+			$('.thumbnails li').
+				bind($.mouseEvents.over, function() {
+
+					$(this).addClass('thumb-hover');
+
+				}).bind($.mouseEvents.out, function() {
+
+					$(this).removeClass('thumb-hover');
+
+				});
+
+			if ($.isTouch) {
+
+				$('.thumbnails').
+					addClass('thumbanils-touch').
+					bind($.mouseEvents.move, function(event) {
+						event.preventDefault();
+					});
+
+			} else {
+
+				$('.thumbnails ul').mouseover(function() {
+
+					$('.thumbnails').addClass('thumbnails-hover');
+
+				}).mousedown(function() {
+
+					return false;
+
+				}).mouseout(function() {
+
+					$('.thumbnails').removeClass('thumbnails-hover');
+
+				});
+
+			}
+
+
+			// Regions
+
+			if ($.isTouch) {
+				$('.magazine').bind('touchstart', regionClick);
+			} else {
+				$('.magazine').click(regionClick);
+			}
+
+			// Events for the next button
+
+			$('.next-button').bind($.mouseEvents.over, function() {
+
+				$(this).addClass('next-button-hover');
+
+			}).bind($.mouseEvents.out, function() {
+
+				$(this).removeClass('next-button-hover');
+
+			}).bind($.mouseEvents.down, function() {
+
+				$(this).addClass('next-button-down');
+
+			}).bind($.mouseEvents.up, function() {
+
+				$(this).removeClass('next-button-down');
+
+			}).click(function() {
+
+				$('.magazine').turn('next');
+
+			});
+
+			// Events for the next button
+
+			$('.previous-button').bind($.mouseEvents.over, function() {
+
+				$(this).addClass('previous-button-hover');
+
+			}).bind($.mouseEvents.out, function() {
+
+				$(this).removeClass('previous-button-hover');
+
+			}).bind($.mouseEvents.down, function() {
+
+				$(this).addClass('previous-button-down');
+
+			}).bind($.mouseEvents.up, function() {
+
+				$(this).removeClass('previous-button-down');
+
+			}).click(function() {
+
+				$('.magazine').turn('previous');
+
+			});
+
+
+			resizeViewport($('header.major').outerWidth(), $(window).height());;
+
+			$('.magazine').addClass('animated');
+
+		}
+
+		// Zoom icon
+
+		 $('.zoom-icon').bind('mouseover', function() {
+
+		 	if ($(this).hasClass('zoom-icon-in'))
+		 		$(this).addClass('zoom-icon-in-hover');
+
+		 	if ($(this).hasClass('zoom-icon-out'))
+		 		$(this).addClass('zoom-icon-out-hover');
+
+		 }).bind('mouseout', function() {
+
+		 	 if ($(this).hasClass('zoom-icon-in'))
+		 		$(this).removeClass('zoom-icon-in-hover');
+
+		 	if ($(this).hasClass('zoom-icon-out'))
+		 		$(this).removeClass('zoom-icon-out-hover');
+
+		 }).bind('click', function() {
+
+		 	if ($(this).hasClass('zoom-icon-in'))
+		 		$('.magazine-viewport').zoom('zoomIn');
+		 	else if ($(this).hasClass('zoom-icon-out'))
+				$('.magazine-viewport').zoom('zoomOut');
+
+		 });
+
+		 $('#canvas').hide();
+
+
+		// Load the HTML4 version if there's not CSS transform
+
+		yepnope({
+			test : Modernizr.csstransforms,
+			yep: ['assets/js/turn.js'],
+			nope: ['assets/js/turn.html4.min.js'],
+			both: ['assets/js/zoom.min.js', 'assets/js/magazine.js', 'assets/css/magazine.css'],
+			complete: loadApp
+		});
+
+		</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

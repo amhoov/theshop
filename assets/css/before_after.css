@@ -1,0 +1,20 @@
+.before_after_slider {
+  position: relative;
+  width: 640px;
+  height: 480px;
+  margin:0 auto;
+}
+
+.before_after_slider > * {
+  position: absolute;
+}
+
+.after {
+  overflow: hidden;
+}
+
+.separator_line {
+	height: 100%;
+	border: 1px solid #fafafa;
+  position: absolute;
+}

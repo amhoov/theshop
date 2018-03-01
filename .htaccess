@@ -1,0 +1,5 @@
+AuthUserFile /var/www/virtual/theshop.olin.edu/html/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Secure Document"
+AuthType Basic
+require user Kern

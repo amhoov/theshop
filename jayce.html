@@ -10,7 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<script type="text/javascript" src="assets/js/jquery.min.1.7.js"></script>
+		<!-- <script type="text/javascript" src="assets/js/jquery.min.1.7.js"></script> -->
+		<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 		<script type="text/javascript" src="assets/js/modernizr.2.5.3.min.js"></script>
 		<script type="text/javascript" src="assets/js/hash.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -34,36 +35,29 @@
 							<li class="active"><a href="reflections.html">Reflections</a></li>
 						</ul>
 						<ul class="icons">
-							<!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
 							<li><a href="http://www.instagram.com/theolinshop" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<!-- <li><a href="" class="icon fa-github"><span class="label">GitHub</span></a></li> -->
 						</ul>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
-
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
 									<h1>If I Opened a Machine Shop</h1>
-									<h4>Jayce Chow</h4>
-
+									<h4>A comic by Jayce Chow</h4>
 								</header>
-								<!-- <div id="canvas">
+								<div id="canvas" overflow="scroll">
 									<div class="zoom-icon zoom-icon-in"></div>
 									<div class="magazine-viewport">
 										<div class="container">
 											<div class="magazine">
-
 												<div ignore="1" class="next-button"></div>
-
 												<div ignore="1" class="previous-button"></div>
 											</div>
 										</div>
 									</div>
-								</div> -->
+								</div>
 							</section>
 				</div>
 
@@ -241,7 +235,7 @@
 
 						setTimeout(function(){
 							$('.magazine').addClass('animated').removeClass('zoom-in');
-							resizeViewport($('header.major').outerWidth(), $(window).height());;
+							resizeViewport($('header.major').outerWidth(), $('header.major').outerWidth()*0.65);;
 						}, 0);
 
 					}
@@ -307,9 +301,9 @@
 
 
 			$(window).resize(function() {
-				resizeViewport($('header.major').outerWidth(), $(window).height());
+				resizeViewport($('header.major').outerWidth(), $('header.major').outerWidth()*0.65);
 			}).bind('orientationchange', function() {
-				resizeViewport($('header.major').outerWidth(), $(window).height());;
+				resizeViewport($('header.major').outerWidth(), $('header.major').outerWidth()*0.65);;
 			});
 
 			// Events for thumbnails
@@ -419,7 +413,7 @@
 			});
 
 
-			resizeViewport($('header.major').outerWidth(), $(window).height());;
+			resizeViewport($('header.major').outerWidth(), $('header.major').outerWidth()*0.65);;
 
 			$('.magazine').addClass('animated');
 
@@ -466,7 +460,6 @@
 		});
 
 		</script>
-			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>

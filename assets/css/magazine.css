@@ -123,7 +123,7 @@ body{
 }
 
 .magazine-viewport .loader{
-	background-image:url(../pics/loader.gif);
+	background-image:url(../../images/loader.gif);
 	width:22px;
 	height:22px;
 	position:absolute;
@@ -178,8 +178,8 @@ body{
 
 .magazine-viewport .previous-button-hover,
 .magazine-viewport .previous-button-down{
-	background-image:url(../pics/arrows.png);
-	background-position:-4px 284px;
+	background-image:url(../../images/arrows.png);
+	background-position:-4px 250px;
 	background-repeat:no-repeat;
 }
 
@@ -190,8 +190,8 @@ body{
 
 .magazine-viewport .next-button-hover,
 .magazine-viewport .next-button-down{
-	background-image:url(../pics/arrows.png);
-	background-position:-38px 284px;
+	background-image:url(../../images/arrows.png);
+	background-position:-38px 250px;
 	background-repeat:no-repeat;
 }
 
@@ -355,7 +355,7 @@ body{
 	height:22px;
 	top:10px;
 	right:10px;
-	background-image:url(../pics/zoom-icons.png);
+	background-image:url(../../images/zoom-icons.png);
 	background-size:88px 22px;
 }
 

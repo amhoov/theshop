@@ -22,6 +22,11 @@
 		font-size:85%;
 	}
 
+	p.smaller{
+		font-size:80%;
+		line-height: 35px;
+	}
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}

@@ -1,5 +1,5 @@
-AuthUserFile /var/www/virtual/theshop.dev.olin.edu/html/.htpasswd
-#AuthUserFile /var/www/virtual/theshop.olin.edu/html/.htpasswd
+#AuthUserFile /var/www/virtual/theshop.dev.olin.edu/html/.htpasswd
+AuthUserFile /var/www/virtual/theshop.olin.edu/html/.htpasswd
 AuthGroupFile /dev/null
 AuthName "Secure Document"
 AuthType Basic

@@ -31,6 +31,10 @@
 		display: block;
 	}
 
+	figcaption{
+		font-size: 0.8em;
+	}
+
 	body {
 		line-height: 1;
 	}

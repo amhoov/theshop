@@ -1920,7 +1920,7 @@
 	}
 
 /* Button */
-
+/* 
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -2099,7 +2099,7 @@
 			button.special:hover,
 			.button.special:hover {
 				background-color: #18bfef;
-			}
+			} */
 
 /* Form */
 

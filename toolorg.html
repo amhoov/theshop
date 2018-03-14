@@ -4,10 +4,11 @@
 		<title>Making The Shop</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/compare.css" />
-		<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" typce="text/css" href="assets/css/jquery.fancybox.min.css" />
+		<link rel="stylesheet" type="text/css" href="http://www.jqueryscript.net/css/jquerysctipttop.css" >
+		<noscript><link rel="stylesheet" type="text/css" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-loading">
 
@@ -90,8 +91,30 @@
 
 								<div class="box alt">
 									<div class="row 50% uniform">
-										<div class="4u"><span class="image fit"><img class="myImg" src="images/toolorg1.jpg" alt="Using a lightbox to capture tool outlines" /></span></div>
-										<div class="4u"><span class="image fit"><img class="myImg" src="images/toolorg2.jpg" alt="Getting user feedback on a prototype" /></span></div>
+
+										<div class="4u">
+											<span class="image fit">
+											<a data-fancybox="gallery"
+											   data-srcset="toolorg1_big 1200w, toolorg1_small 300w"
+											   data-width="1200"
+											   data-height="795"
+											   data-caption="<b>Using a lightbox to capture tool outlines</b>"
+											   href=""><img src="images/toolorg1_big.jpg" alt="">
+											</a>
+											</span>
+										</div>
+										<div class="4u">
+											<span class="image fit">
+											<a data-fancybox="gallery"
+												 data-srcset="toolorg1_big 1200w, toolorg2_small 300w"
+												 data-width="1200"
+												 data-height="795"
+												 data-caption="<b>Using a lightbox to capture tool outlines</b>"
+												 href=""><img src="images/toolorg2_big.jpg" alt="">
+											</a>
+											</span>
+										</div>
+										<!-- <div class="4u"><span class="image fit"><img class="myImg" src="images/toolorg2.jpg" alt="Getting user feedback on a prototype" /></span></div> -->
 										<div class="4u$"><span class="image fit"><img class="myImg" src="images/toolorg3.jpg" alt="Steven assembles a prototype" /></span></div>
 										<!-- Break -->
 										<div class="4u"><span class="image fit"><img class="myImg" src="images/toolorg4.jpg" alt="Mask, raster, paint, repeat" /></span></div>
@@ -130,14 +153,15 @@
 			</div>
 
 		<!-- Scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="assets/js/jquery.fancybox.min.js"></script>
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
 		<script src="assets/js/jquery.scrolly.min.js"></script>
 		<script src="assets/js/skel.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script type="text/javascript" src="assets/js/compare.js"></script>
-		<script type="text/javascript" src="assets/js/modal.js"></script>
+		<!-- <script type="text/javascript" src="assets/js/modal.js"></script> -->
 	</body>
 </html>

@@ -4568,7 +4568,7 @@
      margin: auto;
      display: block;
      width: 80%;
-     max-width: 1200px;
+     max-width: 1000px;
  }
 
  /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -4576,7 +4576,7 @@
      margin: auto;
      display: block;
      width: 80%;
-     max-width: 1200px;
+     max-width: 1000px;
      text-align: center;
      color: #ccc;
      padding: 10px 0;

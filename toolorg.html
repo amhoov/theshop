@@ -5,9 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/compare.css" />
-		<link rel="stylesheet" typce="text/css" href="assets/css/jquery.fancybox.min.css" />
-		<link rel="stylesheet" type="text/css" href="http://www.jqueryscript.net/css/jquerysctipttop.css" >
+		<link rel="stylesheet" typce="text/css" href="assets/css/jquery.fancybox.css" />
 		<noscript><link rel="stylesheet" type="text/css" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-loading">
@@ -40,7 +38,6 @@
 							<section class="post">
 								<header class="major">
 									<h1>Custom Tool Organization</h1>
-									<div class="button">The Brief</div>
 								</header>
 
 								<div class="image main"><img src="images/steven_tool_wall.jpg" alt="" /></div>
@@ -92,52 +89,27 @@
 								<div class="box alt">
 									<div class="row 50% uniform">
 
-										<div class="4u">
-											<span class="image fit">
-											<a data-fancybox="gallery"
-											   data-srcset="toolorg1_big 1200w, toolorg1_small 300w"
-											   data-width="1200"
-											   data-height="795"
-											   data-caption="<b>Using a lightbox to capture tool outlines</b>"
-											   href=""><img src="images/toolorg1_big.jpg" alt="">
-											</a>
-											</span>
-										</div>
-										<div class="4u">
-											<span class="image fit">
-											<a data-fancybox="gallery"
-												 data-srcset="toolorg1_big 1200w, toolorg2_small 300w"
-												 data-width="1200"
-												 data-height="795"
-												 data-caption="<b>Using a lightbox to capture tool outlines</b>"
-												 href=""><img src="images/toolorg2_big.jpg" alt="">
-											</a>
-											</span>
-										</div>
-										<!-- <div class="4u"><span class="image fit"><img class="myImg" src="images/toolorg2.jpg" alt="Getting user feedback on a prototype" /></span></div> -->
-										<div class="4u$"><span class="image fit"><img class="myImg" src="images/toolorg3.jpg" alt="Steven assembles a prototype" /></span></div>
+										<div class="4u"><span class="image fit"><a data-fancybox="gallery" data-caption="Capturing tool outlines with a lightbox" href="images/toolorg1_big.jpg">
+											<img class="myImg" src="images/toolorg1_small.jpg"/></a></span></div>
+										<div class="4u"><span class="image fit"><a data-fancybox="gallery" data-caption="The team gives feedback on an early prototype" href="images/toolorg2_big.jpg">
+											<img class="myImg" src="images/toolorg2_small.jpg"/></a></span></div>
+										<div class="4u$"><span class="image fit"><a data-fancybox="gallery" data-caption="Steven makes a foam sandwich prototype iteration" href="images/toolorg3_big.jpg">
+											<img class="myImg" src="images/toolorg3_small.jpg"/></a></span></div>
 										<!-- Break -->
-										<div class="4u"><span class="image fit"><img class="myImg" src="images/toolorg4.jpg" alt="Mask, raster, paint, repeat" /></span></div>
-										<div class="4u"><span class="image fit"><img class="myImg" src="images/toolorg5.jpg" alt="A masked and rastered prototype backing board" /></span></div>
-										<div class="4u$"><span class="image fit"><img class="myImg" src="images/toolorg6.jpg" alt="Tool outlines and hooks for hammers" /></span></div>
+										<div class="4u"><span class="image fit"><a data-fancybox="gallery" data-caption="Mask. Raster. Paint. Repeat" href="images/toolorg4_big.jpg">
+											<img class="myImg" src="images/toolorg4_small.jpg"/></a></span></div>
+										<div class="4u"><span class="image fit"><a data-fancybox="gallery" data-caption="A masked and rastered prototype backing board" href="images/toolorg5_big.jpg">
+											<img class="myImg" src="images/toolorg5_small.jpg"/></a></span></div>
+										<div class="4u$"><span class="image fit"><a data-fancybox="gallery" data-caption="Tool outlines and hooks for hammer" href="images/toolorg6_big.jpg">
+												<img class="myImg" src="images/toolorg6_small.jpg"/></a></span></div>
 										<!-- Break -->
-										<div class="4u"><span class="image fit"><img class="myImg" src="images/toolorg7.jpg" alt="Taking notes *on* your prototypes is convenient" /></span></div>
-										<div class="4u"><span class="image fit"><img class="myImg" src="images/toolorg8.jpg" alt="More prototype notes" /></span></div>
-										<div class="4u$"><span class="image fit"><img class="myImg" src="images/toolorg9.jpg" alt="Lots of room for improvement in prototypes" /></span></div>
+										<div class="4u"><span class="image fit"><a data-fancybox="gallery" data-caption="Taking notes *on* your prototypes is convenient" href="images/toolorg7_big.jpg">
+											<img class="myImg" src="images/toolorg7_small.jpg"/></a></span></div>
+										<div class="4u"><span class="image fit"><a data-fancybox="gallery" data-caption="More prototype notes" href="images/toolorg8_big.jpg">
+											<img class="myImg" src="images/toolorg8_small.jpg"/></a></span></div>
+										<div class="4u$"><span class="image fit"><a data-fancybox="gallery" data-caption="Lots of room for improvement in prototypes" href="images/toolorg9_big.jpg">
+												<img class="myImg" src="images/toolorg9_small.jpg"/></a></span></div>
 									</div>
-								</div>
-
-								<!-- The Modal -->
-								<div id="myModal" class="modal">
-
-								  <!-- The Close Button -->
-								  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-
-								  <!-- Modal Content (The Image) -->
-								  <img class="modal-content" id="img01">
-
-								  <!-- Modal Caption (Image Text) -->
-								  <div id="caption"></div>
 								</div>
 							</section>
 
@@ -161,7 +133,5 @@
 		<script src="assets/js/skel.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		<script type="text/javascript" src="assets/js/compare.js"></script>
-		<!-- <script type="text/javascript" src="assets/js/modal.js"></script> -->
 	</body>
 </html>
